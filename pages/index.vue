@@ -4,5 +4,9 @@
     </h1>
 </template>
 <script lang="ts" setup>
-
+definePageMeta({
+    middleware: [
+        'sanctum:auth'
+    ],
+})
 </script>
